@@ -80,7 +80,7 @@ int	main(int argc, char *argv[])
 	if (argc > 1)
 		g.vals.map_path = argv[1];
 	else
-		g.vals.map_path = "maps/2.ber";
+		g.vals.map_path = "maps/1.ber";
 	init_game(&g);
 	g.vals.win_loaded = 1;
 	mlx_hook(g.vals.win, ON_DESTROY, 0, clean_quit, &g);

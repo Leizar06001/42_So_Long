@@ -16,7 +16,7 @@ RM = rm -f
 
 MLXFLAGS = -lmlx -lX11 -lXext -lm -lz -lftprintf
 MLXPATH = minilibx-linux
-PRINTF = /ft_printf
+PRINTF = ft_printf
 
 NAME = so_long
 
