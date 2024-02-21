@@ -3,6 +3,7 @@
 
 ### Get all the H2G2 books and escape into the worm hole !
 
+The maps can be edited ;)
 
 This has been made under linux (ubuntu 22.04)
 
