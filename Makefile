@@ -31,7 +31,8 @@ $(NAME): $(OBJS) | $(OBJS_PATH)
 	$(CC) -I so_long_lib.h -L$(MLXPATH) -L$(PRINTF) $(OBJS) $(MLXFLAGS) -o $(NAME) $(DEBFLAGS)
 
 $(OBJS_PATH)/%.o: $(SRCS_PATH)/%.c | $(OBJS_PATH)
-	$(CC) -I$(MLXPATH) -O3 -c $< -o $@ $(DEBFLAGS)
+	@$(CC) -I$(MLXPATH) -O3 -c $< -o $@ $(DEBFLAGS)
+	@echo "Compiling " $<
 
 all: mlx $(NAME)
 
