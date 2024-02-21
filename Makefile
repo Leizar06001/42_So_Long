@@ -16,7 +16,7 @@ RM = rm -f
 
 MLXFLAGS = -lmlx -lX11 -lXext -lm -lz -lftprintf
 MLXPATH = minilibx-linux
-PRINTF = ft_printf
+PRINTF = /ft_printf
 
 NAME = so_long
 
@@ -26,7 +26,15 @@ $(NAME): $(OBJS)
 %.o:%.c $(DEPS)
 	$(CC) -I$(MLXPATH) -O3 -c $< -o $@ $(DEBFLAGS)
 
-all: $(NAME)
+all: mlx $(NAME)
+
+mlx:
+	@echo "\n\n___________________________________"
+	@echo "|                                 |"
+	@echo "|              MLX                |"
+	@echo "|                                 |"
+	@echo "-----------------------------------\n"
+	$(MAKE) -C minilibx-linux
 
 clean:
 	$(RM) $(OBJS)
