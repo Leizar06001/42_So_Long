@@ -13,8 +13,8 @@
 #ifndef SO_LONG_LIB_H
 # define SO_LONG_LIB_H
 
-# include "minilibx-linux/mlx.h"
-# include "minilibx-linux/mlx_int.h"
+# include "../minilibx-linux/mlx.h"
+# include "../minilibx-linux/mlx_int.h"
 # include "get_next_line.h"
 # include "ft_printf/ft_printf.h"
 # include <unistd.h>
