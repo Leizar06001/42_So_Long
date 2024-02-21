@@ -1,10 +1,16 @@
 # 42_So_Long
-So Long 42 project
+## So Long 42 project
 
--> Make
+### Get all the H2G2 books and escape into the worm hole !
+
+
+This has been made under linux (ubuntu 22.04)
+
+-> Make the executable
+make
 
 if errors with mlx lib :
-
--> cd mlx_linux
-
+-> cd minilibx-linux
 -> make re
+
+![til](./so_long.gif)
